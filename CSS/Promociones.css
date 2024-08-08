@@ -1,0 +1,36 @@
+h1 {
+    justify-content: center;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto;    
+    margin-bottom: 20px; 
+}
+
+
+@media (min-width: 768px) { 
+    .image-container img {
+        width: calc(33.33% - 20px); 
+    }
+}
+
+@media (max-width: 767px) { 
+    .image-container img {
+        width: calc(50% - 10px); 
+    }
+}
+
+@media (max-width: 480px) { 
+    .image-container img {
+        width: 100%; 
+    }
+}

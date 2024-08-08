@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1{
+    justify-content: center;
+    text-align: center
+}
+
+h2{
+    justify-content: center;
+    text-align: center
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+main {
+    padding: 20px;
+}
+
+.imagenes-header {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.imagenes-header img {
+    max-width: 40%; 
+    height: auto; 
+}
+
+.beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.beneficio {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    flex: 1 0 250px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.beneficio i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #A83338; 
+}
+
+
+@media (max-width: 992px) {
+    .imagenes-header img {
+        max-width: 45%; 
+    }
+
+    .beneficio {
+        flex-basis: calc(50% - 10px); 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .imagenes-header {
+        flex-direction: column; 
+        align-items: center;   
+    }
+
+    .imagenes-header img {
+        max-width: 90%; 
+        margin-bottom: 10px;
+    }
+
+    .beneficio {
+        flex-basis: 100%
+    }
+
+    .footer-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-newsletter, .footer-links, .footer-social {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+}
